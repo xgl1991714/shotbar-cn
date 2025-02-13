@@ -1,0 +1,68 @@
+:root {
+    --crit-color: #95791b;
+    --hit-color: #72141c;
+    --graze-color: #468652;
+    --miss-color: #5c6060;
+    --text-color: #98c8c8;
+    --bg-color: #2d2921;
+    --fg-color: #040302;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+#input div {
+    display: inline-block;
+}
+
+input {
+    width: 4em;
+    margin: 0 0.5em;
+}
+
+@media screen and (max-width: 800px) {
+    #input div {
+        max-width: 300px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    input {
+        margin: 0;
+    }
+
+    #output div {
+        width: 90%;
+    }
+}
+
+#breakdown svg {
+    box-sizing: content-box;
+}
+
+#output {
+    font-size: 1.5em;
+}
+
+#output div {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+.fancy-shape {
+    background-color: var(--fg-color);
+    background-clip: padding-box;
+    border: 2px var(--text-color) solid;
+    border-radius: 16px;
+    margin: 1rem 2rem;
+}
+
+.fancy-shape > p {
+    margin: 1rem 2rem;
+}
