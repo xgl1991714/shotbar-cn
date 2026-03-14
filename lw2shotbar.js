@@ -26,10 +26,10 @@ window.onload = function () {
         .append("p")
         .selectAll("div")
         .data([
-            { min: 0, max: 100, value: 65, text: "Aim" },
-            { min: 0, max: 100, value: 0, text: "Crit" },
-            { min: 0, max: 100, value: 0, text: "Dodge" },
-            { min: 0, max: 100, value: 10, text: "Graze band" },
+            { min: 0, max: 100, value: 65, text: "命中" },
+            { min: 0, max: 100, value: 0, text: "暴击" },
+            { min: 0, max: 100, value: 0, text: "闪避" },
+            { min: 0, max: 100, value: 10, text: "擦伤带" },
         ])
         .join("div")
         .text((d) => d.text)
